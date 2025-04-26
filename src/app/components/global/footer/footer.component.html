@@ -1,1 +1,25 @@
-<p>footer works!</p>
+<footer>
+  <div class="flex px-4 sm:px-8 min-h-[240px] w-full flex-col items-center justify-between gap-8 bg-zinc-800 py-8 text-white lg:flex-row lg:items-start">
+    <div class="flex flex-col gap-8 w-full">
+      <img alt="Logo" class="h-[118px] min-w-[250px]" ngSrc="/logo.png" height="118" width="250"/>
+      <p class="text-sm font-medium">© Centres Musicaux Gagné 2025 Tout droit réservé.</p>
+    </div>
+
+    <div class="flex flex-col w-full justify-around gap-8 md:flex-row lg:gap-28">
+      @for (category of categories; track $index) {
+        <div class="flex flex-col gap-2">
+          <div class="text-lg font-semibold">{{category.title}}</div>
+          <ul class="flex flex-col gap-1.5">
+            @for (link of category.links; track $index) {
+              <li>
+                <a class="hover:underline" [href]={link}>
+                  {{link.title}}
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</footer>
