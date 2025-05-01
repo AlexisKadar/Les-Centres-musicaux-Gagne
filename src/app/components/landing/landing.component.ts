@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from '../components/global/hero/hero.component';
+import { HeroComponent } from '../global/hero/hero.component';
 import { HistoryComponent } from '../history/history.component';
 
 @Component({
