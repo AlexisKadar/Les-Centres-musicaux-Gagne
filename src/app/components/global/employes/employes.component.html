@@ -20,10 +20,11 @@
                         <img [src]="member.image" alt="Photo de l'équipe" class="w-full h-full object-cover" />
                     </div>
                     <div class="p-5 text-center">
-                        <h3 class="text-lg text-gray-900">{{ member.name }}</h3>
-                        <span class="block mt-1 mb-3 text-sm text-gray-500">{{
-                            member.role
-                            }}</span>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">{{ member.name }}</h3>
+                        <span
+                            class="inline-block mt-1 mb-3 px-3 py-1 text-sm text-red-600 bg-red-100 rounded-full font-semibold">
+                            {{ member.role }}
+                        </span>
                         <p class="text-sm leading-relaxed text-gray-400">
                             {{ member.description }}
                         </p>

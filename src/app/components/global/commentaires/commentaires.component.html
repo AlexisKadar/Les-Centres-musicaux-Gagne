@@ -1,144 +1,41 @@
-<section class="bg-white">
-    <div class="w-full px-4 py-12">
-        <h2 class="text-3xl font-bold text-center mb-18 mt-6">Nos clients parlent pour nous</h2>
+<section class="bg-white py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Nos clients parlent pour nous</h2>
+    <!-- Conteneur avec gradients gauche/droite -->
+    <div class="relative overflow-hidden">
+        <!-- Gradients pour masquer les bords -->
+        <div class="absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent"></div>
+        <div class="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent"></div>
 
-        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Carte #1 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
+        <!-- Première rangée : scroll vers la gauche -->
+        <div class="flex min-w-full animate-scroll-left space-x-6">
+            <ng-container *ngFor="let comment of comments">
+                <article class="bg-gray-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img [src]="comment.image" alt="Avatar" class="w-10 h-10 object-cover rounded-full mr-3" />
+                            <span class="font-semibold text-gray-800">{{ comment.name }}</span>
+                        </div>
+                        <div class="flex space-x-1 text-red-400">★★★★★</div>
                     </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
+                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">"{{ comment.text }}"</p>
+                </article>
+            </ng-container>
+        </div>
 
-            <!-- Carte #2 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
+        <!-- Deuxième rangée : scroll vers la droite -->
+        <div class="mt-8 flex min-w-full animate-scroll-right space-x-6">
+            <ng-container *ngFor="let comment of comments">
+                <article class="bg-gray-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img [src]="comment.image" alt="Avatar" class="w-10 h-10 object-cover rounded-full mr-3" />
+                            <span class="font-semibold text-gray-800">{{ comment.name }}</span>
+                        </div>
+                        <div class="flex space-x-1 text-red-400">★★★★★</div>
                     </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
-            <!-- Carte #3 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
-                    </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
-            <!-- Carte #4 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
-                    </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
-            <!-- Carte #5 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
-                    </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
-            <!-- Carte #6 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
-                    </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
-            <!-- Carte #7 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
-                    </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
-            <!-- Carte #8 -->
-            <article class="bg-gray-100 p-6 rounded-xl flex flex-col">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img src="https://www.size-factory.com/le-journal/wp-content/uploads/2023/12/80SF201123-Web.jpg"
-                            alt="Avatar de Stéphanie" class="w-10 h-10 rounded-full mr-3">
-                        <span class="font-semibold text-gray-800">Stéphanie</span>
-                    </div>
-                    <div class="flex space-x-1 text-yellow-400">
-                        ★★★★★
-                    </div>
-                </div>
-                <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                    “Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.”
-                </p>
-            </article>
-
+                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">"{{ comment.text }}"</p>
+                </article>
+            </ng-container>
         </div>
     </div>
 </section>
