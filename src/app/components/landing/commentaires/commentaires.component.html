@@ -7,9 +7,9 @@
         <div class="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent"></div>
 
         <!-- Première rangée : scroll vers la gauche -->
-        <div class="flex min-w-full animate-scroll-left space-x-6">
+        <div class="flex min-w-full animate-scroll-left space-x-6 h-40">
             <ng-container *ngFor="let comment of comments">
-                <article class="bg-gray-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
+                <article class="bg-red-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img [src]="comment.image" alt="Avatar" class="w-10 h-10 object-cover rounded-full mr-3" />
@@ -23,9 +23,9 @@
         </div>
 
         <!-- Deuxième rangée : scroll vers la droite -->
-        <div class="mt-8 flex min-w-full animate-scroll-right space-x-6">
+        <div class="mt-8 flex min-w-full animate-scroll-right space-x-6 h-40">
             <ng-container *ngFor="let comment of comments">
-                <article class="bg-gray-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
+                <article class="bg-red-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img [src]="comment.image" alt="Avatar" class="w-10 h-10 object-cover rounded-full mr-3" />

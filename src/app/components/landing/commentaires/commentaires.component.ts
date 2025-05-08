@@ -13,7 +13,7 @@ export class CommentairesComponent {
   comments = [
     {
       name: 'Stéphanie',
-      text: 'Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.',
+      text: 'Service impeccable!',
       image: 'https://thumbor.comeup.com/unsafe/fit-in/630x354/filters:quality(90):no_upscale()/uploads/media/picture/2021-04-10/meuf-6071fa6b96341.jpg',
     },
     {
@@ -28,7 +28,7 @@ export class CommentairesComponent {
     },
     {
       name: 'Emilie',
-      text: 'Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.',
+      text: 'Service impeccable!',
       image: 'https://www.allianz.fr/assurance-particulier/sante-prevoyance/assurance-chien-chat/assurance-chien/_jcr_content/root/stage/stageimage.img.70.3360.jpeg/1741277757681/visuel-stage-chien.jpeg',
     },
     {
@@ -43,7 +43,7 @@ export class CommentairesComponent {
     },
     {
       name: 'Robert',
-      text: 'Service impeccable, j’ai pu poser toutes mes questions et obtenir des réponses claires et rapides.',
+      text: 'Service impeccable!',
       image: 'https://www.lesrecettesdedaniel.fr/modules/hiblog/views/img/upload/original/488818546d009ef951fa45b42f404daa.jpg',
     },
     {
