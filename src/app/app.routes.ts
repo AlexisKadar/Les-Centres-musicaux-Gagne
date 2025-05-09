@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { LandingComponent } from './components/landing/landing.component';
+import { LandingComponent } from './landing/landing.component';
 import { ServicesComponent } from './services/services.component';
 import { AchatComponent } from './achat/achat.component';
 import { ReparationComponent } from './reparation/reparation.component';
