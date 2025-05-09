@@ -17,7 +17,19 @@ export class NavbarComponent {
     },
     {
       href: "/services",
-      label: "Services Offerts",
+      label: "Location D'instruments",
+    },
+    {
+      href: "/achat",
+      label: "Achat D'instruments",
+    },
+    {
+      href: "/cours",
+      label: "Cours de Musique",
+    },
+    {
+      href: "/reparation",
+      label: "Réparation D'instruments",
     },
     {
       href: "/temoignages",
