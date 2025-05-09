@@ -1,13 +1,21 @@
-<div class="flex flex-col gap-y-32 overflow-x-visible">
-    <!-- Hero -->
-    <app-hero class="bg-cover overflow-x-visible w-auto "></app-hero>
-    <app-trio-icons></app-trio-icons>
-    <!-- Histoire -->
-    <app-history></app-history>
-    <!-- Employés -->
-    <app-employes></app-employes>
-    <!-- Services -->
-    <app-services-musique></app-services-musique>
-    <!-- Commentaires -->
-    <app-commentaires></app-commentaires>
-</div>
+<app-navbar />
+
+<main class="flex min-h-[calc(100vh-240px-128px)] justify-center overflow-hidden px-4 pb-10 sm:px-8">
+    <div class="w-full max-w-[1240px] overflow-visible">
+        <div class="flex flex-col gap-y-32 overflow-x-visible">
+            <!-- Hero -->
+            <app-hero class="bg-cover overflow-x-visible w-auto "></app-hero>
+            <app-trio-icons></app-trio-icons>
+            <!-- Histoire -->
+            <app-history></app-history>
+            <!-- Employés -->
+            <app-employes></app-employes>
+            <!-- Services -->
+            <app-services-musique></app-services-musique>
+            <!-- Commentaires -->
+            <app-commentaires></app-commentaires>
+        </div>
+    </div>
+</main>
+
+<app-footer />

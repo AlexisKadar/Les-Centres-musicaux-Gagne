@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import {RouterLink} from '@angular/router';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
+  standalone: true,
   imports: [CommonModule, NgOptimizedImage],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
