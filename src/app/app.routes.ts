@@ -4,7 +4,7 @@ import { LayoutComponent } from "./components/global/layout/layout.component";
 import { CoursComponent } from "./cours/cours.component";
 import { LandingComponent } from "./landing/landing.component";
 import { ReparationComponent } from "./reparation/reparation.component";
-import { ServicesComponent } from "./services/services.component";
+import { LocationComponent } from "./location/location.component";
 
 export const routes: Routes = [
 	{ path: "", component: LandingComponent },
@@ -12,7 +12,7 @@ export const routes: Routes = [
 		path: "",
 		component: LayoutComponent,
 		children: [
-			{ path: "services", component: ServicesComponent },
+			{ path: "location", component: LocationComponent },
 			{ path: "achat", component: AchatComponent },
 			{ path: "reparation", component: ReparationComponent },
 			{ path: "cours", component: CoursComponent },

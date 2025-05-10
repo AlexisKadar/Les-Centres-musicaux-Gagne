@@ -14,7 +14,7 @@ export class FooterComponent {
 			title: "Site Web",
 			links: [
 				{ title: "Accueil", url: "/" },
-				{ title: "Services Offerts", url: "/services" },
+				{ title: "Services Offerts", url: "/location" },
 				{ title: "Témoignages", url: "/temoignages" },
 			],
 		},

@@ -18,7 +18,7 @@ export class NavbarComponent {
 			label: "Accueil",
 		},
 		{
-			href: "/services",
+			href: "/location",
 			label: "Location D'instruments",
 		},
 		{
