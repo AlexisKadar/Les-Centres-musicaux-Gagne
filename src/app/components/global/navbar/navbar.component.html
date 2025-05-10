@@ -12,7 +12,7 @@
 
     <ul class="items-center gap-7 flex">
       <li *ngFor="let link of links">
-        <a class="hover:underline" [routerLink]="link.href">
+        <a class="hover:underline font-medium text-primary" [routerLink]="link.href">
           {{ link.label }}
         </a>
       </li>
