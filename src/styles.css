@@ -32,3 +32,12 @@ body {
 .animate-scroll-right {
   animation: scroll-right 30s linear infinite;
 }
+
+@theme {
+  --color-primary: #D62A23;
+  --color-secondary: #F57A75;
+  --color-dark: #081945;
+  --color-muted: #D1D5DB;
+  --color-background: #f3f3f5;
+  --color-background-secondary: #B11B15;
+}
