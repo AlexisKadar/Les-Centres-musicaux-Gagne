@@ -11,7 +11,7 @@ import { FooterComponent } from '../components/global/footer/footer.component';
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [HeroComponent, HistoryComponent, EmployesComponent, ServicesMusiqueComponent, CommentairesComponent, TrioIconsComponent, NavbarComponent, FooterComponent],
+  imports: [HeroComponent, HistoryComponent, EmployesComponent, ServicesMusiqueComponent, CommentairesComponent, NavbarComponent, FooterComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css'
 })

@@ -40,4 +40,6 @@ body {
   --color-muted: #D1D5DB;
   --color-background: #f3f3f5;
   --color-background-secondary: #A31813;
+
+  --spacing-page: 1240px;
 }
