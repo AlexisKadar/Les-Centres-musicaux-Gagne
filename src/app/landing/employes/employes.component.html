@@ -10,7 +10,7 @@
 	</button>
 
 	<!-- Container visible -->
-	<div class="min-h-[400px] overflow-hidden">
+	<div class="min-h-[400px] overflow-hidden px-12">
 		<!-- Conteneur qui défile -->
 		<div class="flex transition-transform duration-500" [ngStyle]="{ transform: 'translateX(-' + currentIndex * 100 + '%)' }">
 			<div *ngFor="let member of team" class="flex min-w-full justify-center md:min-w-[33.33%]">
