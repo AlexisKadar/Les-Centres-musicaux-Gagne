@@ -1,41 +1,41 @@
 <section class="bg-white py-16">
-    <h2 class="text-3xl font-bold text-center mb-12">Nos clients parlent pour nous</h2>
-    <!-- Conteneur avec gradients gauche/droite -->
-    <div class="relative overflow-hidden">
-        <!-- Gradients pour masquer les bords -->
-        <div class="absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent"></div>
-        <div class="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent"></div>
+	<h2 class="mb-12 text-center text-3xl font-bold">Nos clients parlent pour nous</h2>
+	<!-- Conteneur avec gradients gauche/droite -->
+	<div class="relative overflow-hidden">
+		<!-- Gradients pour masquer les bords -->
+		<div class="absolute top-0 left-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent"></div>
+		<div class="absolute top-0 right-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent"></div>
 
-        <!-- Première rangée : scroll vers la gauche -->
-        <div class="flex min-w-full animate-scroll-left space-x-6 h-40">
-            <ng-container *ngFor="let comment of comments">
-                <article class="bg-red-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <img [src]="comment.image" alt="Avatar" class="w-10 h-10 object-cover rounded-full mr-3" />
-                            <span class="font-semibold text-gray-800">{{ comment.name }}</span>
-                        </div>
-                        <div class="flex space-x-1 text-red-400">★★★★★</div>
-                    </div>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">"{{ comment.text }}"</p>
-                </article>
-            </ng-container>
-        </div>
+		<!-- Première rangée : scroll vers la gauche -->
+		<div class="animate-scroll-left flex h-40 min-w-full space-x-6">
+			<ng-container *ngFor="let comment of comments">
+				<article class="flex max-w-sm min-w-[250px] flex-col rounded-xl bg-red-100 p-6 shadow">
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<img [src]="comment.image" alt="Avatar" class="mr-3 h-10 w-10 rounded-full object-cover" />
+							<span class="font-semibold text-gray-800">{{ comment.name }}</span>
+						</div>
+						<div class="flex space-x-1 text-red-400">★★★★★</div>
+					</div>
+					<p class="mt-4 text-sm leading-relaxed text-gray-600">"{{ comment.text }}"</p>
+				</article>
+			</ng-container>
+		</div>
 
-        <!-- Deuxième rangée : scroll vers la droite -->
-        <div class="mt-8 flex min-w-full animate-scroll-right space-x-6 h-40">
-            <ng-container *ngFor="let comment of comments">
-                <article class="bg-red-100 p-6 rounded-xl flex flex-col min-w-[250px] max-w-sm shadow">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <img [src]="comment.image" alt="Avatar" class="w-10 h-10 object-cover rounded-full mr-3" />
-                            <span class="font-semibold text-gray-800">{{ comment.name }}</span>
-                        </div>
-                        <div class="flex space-x-1 text-red-400">★★★★★</div>
-                    </div>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">"{{ comment.text }}"</p>
-                </article>
-            </ng-container>
-        </div>
-    </div>
+		<!-- Deuxième rangée : scroll vers la droite -->
+		<div class="animate-scroll-right mt-8 flex h-40 min-w-full space-x-6">
+			<ng-container *ngFor="let comment of comments">
+				<article class="flex max-w-sm min-w-[250px] flex-col rounded-xl bg-red-100 p-6 shadow">
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<img [src]="comment.image" alt="Avatar" class="mr-3 h-10 w-10 rounded-full object-cover" />
+							<span class="font-semibold text-gray-800">{{ comment.name }}</span>
+						</div>
+						<div class="flex space-x-1 text-red-400">★★★★★</div>
+					</div>
+					<p class="mt-4 text-sm leading-relaxed text-gray-600">"{{ comment.text }}"</p>
+				</article>
+			</ng-container>
+		</div>
+	</div>
 </section>

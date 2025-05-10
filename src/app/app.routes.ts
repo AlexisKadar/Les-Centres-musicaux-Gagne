@@ -1,22 +1,21 @@
-import { Routes } from '@angular/router';
-import { LandingComponent } from './landing/landing.component';
-import { ServicesComponent } from './services/services.component';
-import { AchatComponent } from './achat/achat.component';
-import { ReparationComponent } from './reparation/reparation.component';
-import { CoursComponent } from './cours/cours.component';
-import { LayoutComponent } from './components/global/layout/layout.component';
+import { Routes } from "@angular/router";
+import { AchatComponent } from "./achat/achat.component";
+import { LayoutComponent } from "./components/global/layout/layout.component";
+import { CoursComponent } from "./cours/cours.component";
+import { LandingComponent } from "./landing/landing.component";
+import { ReparationComponent } from "./reparation/reparation.component";
+import { ServicesComponent } from "./services/services.component";
 
 export const routes: Routes = [
-  { path: '', component: LandingComponent },
-  {
-    path: '',
-    component: LayoutComponent,
-    children: [
-      { path: 'services', component: ServicesComponent },
-      { path: 'achat', component: AchatComponent },
-      { path: 'reparation', component: ReparationComponent },
-      { path: 'cours', component: CoursComponent }
-    ]
-  }
-
+	{ path: "", component: LandingComponent },
+	{
+		path: "",
+		component: LayoutComponent,
+		children: [
+			{ path: "services", component: ServicesComponent },
+			{ path: "achat", component: AchatComponent },
+			{ path: "reparation", component: ReparationComponent },
+			{ path: "cours", component: CoursComponent },
+		],
+	},
 ];

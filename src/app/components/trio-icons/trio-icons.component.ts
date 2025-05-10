@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { IconComponent } from '../icon/icon.component';
+import { Component } from "@angular/core";
+import { IconComponent } from "../icon/icon.component";
 
 @Component({
-  selector: 'app-trio-icons',
-  standalone: true,
-  imports: [IconComponent],
-  templateUrl: './trio-icons.component.html',
-  styleUrl: './trio-icons.component.css'
+	selector: "app-trio-icons",
+	standalone: true,
+	imports: [IconComponent],
+	templateUrl: "./trio-icons.component.html",
+	styleUrl: "./trio-icons.component.css",
 })
-export class TrioIconsComponent {
-
-}
+export class TrioIconsComponent {}

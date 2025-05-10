@@ -1,21 +1,15 @@
-<header class="flex h-32 items-center px-4 sm:px-8 {{isDark ? 'bg-background-secondary' : ''}}">
-  <nav class="flex w-full max-w-page items-center gap-8">
-    <a routerLink="/">
-      <img
-        alt="Logo"
-        class="h-16 min-w-[136px]"
-        height="64"
-        ngSrc="{{isDark ? '/logo-light.png' : '/logo.png'}}"
-        width="136"
-      />
-    </a>
+<header class="flex h-32 items-center px-4 sm:px-8 {{ isDark ? 'bg-background-secondary' : '' }}">
+	<nav class="max-w-page flex w-full items-center gap-8">
+		<a routerLink="/">
+			<img alt="Logo" class="h-16 min-w-[136px]" height="64" ngSrc="{{ isDark ? '/logo-light.png' : '/logo.png' }}" width="136" />
+		</a>
 
-    <ul class="items-center gap-7 flex">
-      <li *ngFor="let link of links">
-        <a class="hover:underline font-medium {{isDark ? 'text-white' : 'text-primary'}}" [routerLink]="link.href">
-          {{ link.label }}
-        </a>
-      </li>
-    </ul>
-  </nav>
+		<ul class="flex items-center gap-7">
+			<li *ngFor="let link of links">
+				<a class="hover:underline font-medium {{ isDark ? 'text-white' : 'text-primary' }}" [routerLink]="link.href">
+					{{ link.label }}
+				</a>
+			</li>
+		</ul>
+	</nav>
 </header>

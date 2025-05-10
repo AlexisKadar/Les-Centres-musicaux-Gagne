@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 body {
-  font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 @keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
+	0% {
+		transform: translateX(0);
+	}
 
-  100% {
-    transform: translateX(-50%);
-  }
+	100% {
+		transform: translateX(-50%);
+	}
 }
 
 @keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
-  }
+	0% {
+		transform: translateX(-50%);
+	}
 
-  100% {
-    transform: translateX(0);
-  }
+	100% {
+		transform: translateX(0);
+	}
 }
 
 .animate-scroll-left {
-  animation: scroll-left 30s linear infinite;
+	animation: scroll-left 30s linear infinite;
 }
 
 .animate-scroll-right {
-  animation: scroll-right 30s linear infinite;
+	animation: scroll-right 30s linear infinite;
 }
 
 @theme {
-  --color-primary: #D62A23;
-  --color-secondary: #F57A75;
-  --color-dark: #081945;
-  --color-muted: #D1D5DB;
-  --color-background: #f3f3f5;
-  --color-background-secondary: #A31813;
+	--color-primary: #d62a23;
+	--color-secondary: #f57a75;
+	--color-dark: #081945;
+	--color-muted: #d1d5db;
+	--color-background: #f3f3f5;
+	--color-background-secondary: #a31813;
 
-  --spacing-page: 1240px;
+	--spacing-page: 1240px;
 }

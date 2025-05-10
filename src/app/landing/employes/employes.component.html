@@ -1,42 +1,32 @@
-<section class="py-20 px-5 text-center font-sans relative overflow-hidden">
-    <h2 class="text-[2rem] font-bold mb-18 text-gray-900">
-        Rencontrez notre Équipe
-    </h2>
+<section class="relative overflow-hidden px-5 py-20 text-center font-sans">
+	<h2 class="mb-18 text-[2rem] font-bold text-gray-900">Rencontrez notre Équipe</h2>
 
-    <!-- Flèche gauche -->
-    <button (click)="prev()"
-        class="absolute left-2 top-[50%] -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md">
-        ←
-    </button>
+	<!-- Flèche gauche -->
+	<button (click)="prev()" class="absolute top-[50%] left-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md">←</button>
 
-    <!-- Container visible -->
-    <div class="overflow-hidden  min-h-[400px]">
-        <!-- Conteneur qui défile -->
-        <div class="flex transition-transform duration-500"
-            [ngStyle]="{ transform: 'translateX(-' + currentIndex * 100 + '%)' }">
-            <div *ngFor="let member of team" class="min-w-full md:min-w-[33.33%] flex justify-center">
-                <div class="w-[280px] bg-red-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center">
-                    <div class="w-full h-[180px] bg-gray-100 overflow-hidden">
-                        <img [src]="member.image" alt="Photo de l'équipe" class="w-full h-full object-cover" />
-                    </div>
-                    <div class="p-5 text-center">
-                        <h3 class="text-xl font-bold mb-3 text-gray-900">{{ member.name }}</h3>
-                        <span
-                            class="inline-block mt-1 mb-3 px-3 py-1 text-sm text-red-600 bg-red-200 rounded-full font-semibold">
-                            {{ member.role }}
-                        </span>
-                        <p class="text-sm leading-relaxed text-gray-400">
-                            {{ member.description }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- Container visible -->
+	<div class="min-h-[400px] overflow-hidden">
+		<!-- Conteneur qui défile -->
+		<div class="flex transition-transform duration-500" [ngStyle]="{ transform: 'translateX(-' + currentIndex * 100 + '%)' }">
+			<div *ngFor="let member of team" class="flex min-w-full justify-center md:min-w-[33.33%]">
+				<div class="flex w-[280px] flex-col items-center overflow-hidden rounded-xl bg-red-100 shadow-md">
+					<div class="h-[180px] w-full overflow-hidden bg-gray-100">
+						<img [src]="member.image" alt="Photo de l'équipe" class="h-full w-full object-cover" />
+					</div>
+					<div class="p-5 text-center">
+						<h3 class="mb-3 text-xl font-bold text-gray-900">{{ member.name }}</h3>
+						<span class="mt-1 mb-3 inline-block rounded-full bg-red-200 px-3 py-1 text-sm font-semibold text-red-600">
+							{{ member.role }}
+						</span>
+						<p class="text-sm leading-relaxed text-gray-400">
+							{{ member.description }}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Flèche droite -->
-    <button (click)="next()"
-        class="absolute right-2 top-[50%] -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md">
-        →
-    </button>
+	<!-- Flèche droite -->
+	<button (click)="next()" class="absolute top-[50%] right-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md">→</button>
 </section>
