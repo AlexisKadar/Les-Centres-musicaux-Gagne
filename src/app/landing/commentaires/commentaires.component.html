@@ -9,15 +9,15 @@
 		<!-- Première rangée : scroll vers la gauche -->
 		<div class="animate-scroll-left flex h-40 min-w-full space-x-6">
 			<ng-container *ngFor="let comment of comments">
-				<article class="flex max-w-sm min-w-[250px] flex-col rounded-xl bg-red-100 p-6 shadow">
+				<article class="flex max-w-sm min-w-[250px] flex-col rounded-xl bg-card p-6 shadow">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center">
 							<img [src]="comment.image" alt="Avatar" class="mr-3 h-10 w-10 rounded-full object-cover" />
-							<span class="font-semibold text-gray-800">{{ comment.name }}</span>
+							<span class="font-semibold">{{ comment.name }}</span>
 						</div>
-						<div class="flex space-x-1 text-red-400">★★★★★</div>
+						<div class="flex space-x-1 text-primary">★★★★★</div>
 					</div>
-					<p class="mt-4 text-sm leading-relaxed text-gray-600">"{{ comment.text }}"</p>
+					<p class="mt-4 text-sm leading-relaxed">"{{ comment.text }}"</p>
 				</article>
 			</ng-container>
 		</div>
@@ -25,15 +25,15 @@
 		<!-- Deuxième rangée : scroll vers la droite -->
 		<div class="animate-scroll-right mt-8 flex h-40 min-w-full space-x-6">
 			<ng-container *ngFor="let comment of comments">
-				<article class="flex max-w-sm min-w-[250px] flex-col rounded-xl bg-red-100 p-6 shadow">
+				<article class="flex max-w-sm min-w-[250px] flex-col rounded-xl bg-card p-6 shadow">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center">
 							<img [src]="comment.image" alt="Avatar" class="mr-3 h-10 w-10 rounded-full object-cover" />
-							<span class="font-semibold text-gray-800">{{ comment.name }}</span>
+							<span class="font-semibold">{{ comment.name }}</span>
 						</div>
-						<div class="flex space-x-1 text-red-400">★★★★★</div>
+						<div class="flex space-x-1 text-primary">★★★★★</div>
 					</div>
-					<p class="mt-4 text-sm leading-relaxed text-gray-600">"{{ comment.text }}"</p>
+					<p class="mt-4 text-sm leading-relaxed ">"{{ comment.text }}"</p>
 				</article>
 			</ng-container>
 		</div>
