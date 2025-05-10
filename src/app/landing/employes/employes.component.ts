@@ -1,10 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
+import { ArrowLeft, ArrowRight, LucideAngularModule } from "lucide-angular";
 
 @Component({
 	selector: "app-employes",
 	standalone: true,
-	imports: [CommonModule],
+	imports: [CommonModule, LucideAngularModule],
 	templateUrl: "./employes.component.html",
 	styleUrl: "./employes.component.css",
 })
@@ -88,4 +89,7 @@ export class EmployesComponent {
 	prev() {
 		this.currentIndex = this.currentIndex - 1 < 0 ? this.maxIndex : this.currentIndex - 1;
 	}
+
+	protected readonly ArrowLeft = ArrowLeft;
+	protected readonly ArrowRight = ArrowRight;
 }

@@ -1,24 +1,29 @@
-<section class="relative overflow-hidden px-5 py-20 text-center">
-	<h2 class="mb-18 text-[2rem] font-bold text-gray-900">Rencontrez notre Équipe</h2>
+<section class="relative flex flex-col gap-8">
+	<h2 class="text-center text-3xl font-bold md:text-5xl">Rencontrez notre Équipe</h2>
 
 	<!-- Flèche gauche -->
-	<button (click)="prev()" class="absolute top-[50%] left-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md">←</button>
+	<button
+		(click)="prev()"
+		class="absolute top-[50%] left-2 z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white"
+	>
+		<lucide-icon [img]="ArrowLeft"></lucide-icon>
+	</button>
 
 	<!-- Container visible -->
 	<div class="min-h-[400px] overflow-hidden">
 		<!-- Conteneur qui défile -->
 		<div class="flex transition-transform duration-500" [ngStyle]="{ transform: 'translateX(-' + currentIndex * 100 + '%)' }">
 			<div *ngFor="let member of team" class="flex min-w-full justify-center md:min-w-[33.33%]">
-				<div class="flex w-[280px] flex-col items-center overflow-hidden rounded-xl bg-red-100 shadow-md">
+				<div class="bg-card flex w-[280px] flex-col items-center overflow-hidden rounded-xl shadow-md">
 					<div class="h-[180px] w-full overflow-hidden bg-gray-100">
 						<img [src]="member.image" alt="Photo de l'équipe" class="h-full w-full object-cover" />
 					</div>
 					<div class="p-5 text-center">
-						<h3 class="mb-3 text-xl font-bold text-gray-900">{{ member.name }}</h3>
-						<span class="mt-1 mb-3 inline-block rounded-full bg-red-200 px-3 py-1 text-sm font-semibold text-red-600">
+						<h3 class="mb-3 text-xl font-semibold">{{ member.name }}</h3>
+						<span class="bg-primary/20 text-primary mt-1 mb-3 inline-block rounded-full px-3 py-1 text-sm font-medium">
 							{{ member.role }}
 						</span>
-						<p class="text-sm leading-relaxed text-gray-400">
+						<p class="text-muted text-sm leading-relaxed">
 							{{ member.description }}
 						</p>
 					</div>
@@ -28,5 +33,10 @@
 	</div>
 
 	<!-- Flèche droite -->
-	<button (click)="next()" class="absolute top-[50%] right-2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md">→</button>
+	<button
+		(click)="next()"
+		class="absolute top-[50%] right-2 z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white"
+	>
+		<lucide-icon [img]="ArrowRight"></lucide-icon>
+	</button>
 </section>
