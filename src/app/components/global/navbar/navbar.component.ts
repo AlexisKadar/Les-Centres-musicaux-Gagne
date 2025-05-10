@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 
@@ -10,6 +10,8 @@ import {CommonModule, NgOptimizedImage} from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  @Input() isDark = false;
+
   links = [
     {
       href: "/",
