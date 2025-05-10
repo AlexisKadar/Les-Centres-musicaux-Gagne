@@ -45,56 +45,23 @@
 	</p>
 
 	<div class="mb-18 flex flex-wrap justify-center gap-6">
-		<!-- Guitare -->
+		@for (course of courses; track course.title) {
 		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
 			<img
-				src="https://www.parents.com/thmb/ZRneQeGqThv4iV61Nl25zgQMlhQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-96162171-2000-061841fa01cf428bb25fdf405e251907.jpg"
-				alt="Guitare"
+				[src]="course.imageUrl"
+				[alt]="course.title"
 				class="h-70 w-full object-cover brightness-100 filter transition duration-300 ease-in-out group-hover:brightness-93"
 			/>
 			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">Piano</h3>
+				<h3 class="text-[2rem] font-medium">{{course.title}}</h3>
 				<div
 					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
 				>
-					20$
+					{{course.price}}
 				</div>
 			</div>
 		</div>
-
-		<!-- Trompette -->
-		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
-			<img
-				src="https://riversideguitarschool.com/wp-content/uploads/2022/08/group-classes-1.jpg"
-				alt="Trompette"
-				class="h-70 w-full object-cover brightness-100 filter transition duration-300 ease-in-out group-hover:brightness-93"
-			/>
-			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">Guitare</h3>
-				<div
-					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
-				>
-					30$
-				</div>
-			</div>
-		</div>
-
-		<!-- Violon -->
-		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
-			<img
-				src="https://thehappyviolinist.com/wp-content/uploads/2017/06/violin3-1080x675.jpg"
-				alt="Violon"
-				class="h-70 w-full object-cover brightness-100 filter transition duration-300 ease-in-out group-hover:brightness-93"
-			/>
-			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">Violon</h3>
-				<div
-					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
-				>
-					40$
-				</div>
-			</div>
-		</div>
+		}
 	</div>
 
 	<div class="section mb-18">

@@ -44,56 +44,23 @@
 	</p>
 
 	<div class="mb-18 flex flex-wrap justify-center gap-6">
-		<!-- Guitare -->
+		@for (instrument of instruments; track instrument.title) {
 		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
 			<img
-				src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GuitareClassique5.png/330px-GuitareClassique5.png"
-				alt="Guitare"
+				[src]="instrument.imageUrl"
+				[alt]="instrument.title"
 				class="h-70 w-full object-contain p-4"
 			/>
 			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">Guitare</h3>
+				<h3 class="text-[2rem] font-medium">{{instrument.title}}</h3>
 				<div
 					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
 				>
-					20$
+					{{instrument.price}}
 				</div>
 			</div>
 		</div>
-
-		<!-- Trompette -->
-		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
-			<img
-				src="https://static.vecteezy.com/system/resources/previews/049/952/750/non_2x/brass-trumpet-shining-under-bright-studio-lights-cut-out-transparent-png.png"
-				alt="Trompette"
-				class="h-70 w-full object-contain p-4"
-			/>
-			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">Trompette</h3>
-				<div
-					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
-				>
-					30$
-				</div>
-			</div>
-		</div>
-
-		<!-- Violon -->
-		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
-			<img
-				src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Violin_VL100.png/330px-Violin_VL100.png"
-				alt="Violon"
-				class="h-70 w-full object-contain p-4"
-			/>
-			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">Violon</h3>
-				<div
-					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
-				>
-					40$
-				</div>
-			</div>
-		</div>
+		}
 	</div>
 
 	<div class="section mb-18">
