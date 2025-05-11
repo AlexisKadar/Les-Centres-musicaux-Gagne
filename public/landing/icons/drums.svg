@@ -1,0 +1,54 @@
+<svg width="284" height="448" viewBox="0 0 284 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_60_817)">
+<ellipse cx="122.941" cy="323.382" rx="47.1773" ry="49.3818" fill="#D62A23"/>
+</g>
+<g clip-path="url(#clip0_60_817)">
+<path d="M82.0834 283.599L114.417 315.932" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M162.917 283.599L130.583 315.932" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M122.5 332.099C144.822 332.099 162.917 323.051 162.917 311.891C162.917 300.73 144.822 291.682 122.5 291.682C100.179 291.682 82.0834 300.73 82.0834 311.891C82.0834 323.051 100.179 332.099 122.5 332.099Z" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M102.292 329.674V361.603" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M122.5 332.099V364.432" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M142.708 329.674V361.603" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M82.0834 311.891V344.224C82.0834 349.584 86.3415 354.724 93.9211 358.513C101.501 362.303 111.781 364.432 122.5 364.432C133.219 364.432 143.499 362.303 151.079 358.513C158.659 354.724 162.917 349.584 162.917 344.224V311.891" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g filter="url(#filter1_f_60_817)">
+<ellipse cx="171.841" cy="207.182" rx="36.4773" ry="38.1818" fill="#D62A23"/>
+</g>
+<path d="M140.25 176.422L165.25 201.422" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202.75 176.422L177.75 201.422" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171.5 213.922C188.759 213.922 202.75 206.926 202.75 198.297C202.75 189.667 188.759 182.672 171.5 182.672C154.241 182.672 140.25 189.667 140.25 198.297C140.25 206.926 154.241 213.922 171.5 213.922Z" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M155.875 212.047V236.734" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171.5 213.922V238.922" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M187.125 212.047V236.734" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140.25 198.297V223.297C140.25 227.441 143.542 231.415 149.403 234.345C155.263 237.276 163.212 238.922 171.5 238.922C179.788 238.922 187.737 237.276 193.597 234.345C199.458 231.415 202.75 227.441 202.75 223.297V198.297" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#filter2_f_60_817)">
+<ellipse cx="107.291" cy="107.582" rx="31.1273" ry="32.5818" fill="#D62A23"/>
+</g>
+<path d="M80.3334 81.3333L101.667 102.667" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M133.667 81.3333L112.333 102.667" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M107 113.333C121.728 113.333 133.667 107.364 133.667 100C133.667 92.6362 121.728 86.6667 107 86.6667C92.2724 86.6667 80.3334 92.6362 80.3334 100C80.3334 107.364 92.2724 113.333 107 113.333Z" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M93.6666 111.733V132.8" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M107 113.333V134.667" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120.333 111.733V132.8" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M80.3334 100V121.333C80.3334 124.87 83.1429 128.261 88.1439 130.761C93.1448 133.262 99.9276 134.667 107 134.667C114.072 134.667 120.855 133.262 125.856 130.761C130.857 128.261 133.667 124.87 133.667 121.333V100" stroke="#D62A23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_60_817" x="0.763672" y="199" width="244.354" height="248.764" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="37.5" result="effect1_foregroundBlur_60_817"/>
+</filter>
+<filter id="filter1_f_60_817" x="60.3636" y="94" width="222.955" height="226.364" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="37.5" result="effect1_foregroundBlur_60_817"/>
+</filter>
+<filter id="filter2_f_60_817" x="1.1637" y="0" width="212.255" height="215.164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="37.5" result="effect1_foregroundBlur_60_817"/>
+</filter>
+<clipPath id="clip0_60_817">
+<rect width="85" height="86" fill="white" transform="translate(80 281)"/>
+</clipPath>
+</defs>
+</svg>
