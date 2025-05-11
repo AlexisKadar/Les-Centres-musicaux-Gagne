@@ -3,23 +3,19 @@
 
 	<div class="mx-auto inline-grid grid-cols-[280px_280px] gap-18">
 		@for (service of services; track service.title) {
-			<div
-				class="flex w-[280px] transform flex-col items-center overflow-hidden rounded-xl bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-			>
-				<div class="h-[180px] w-full">
-					<img
-						[src]="service.imageUrl"
-						[alt]="'Photo du service ' + service.title"
-						class="h-full w-full object-cover"
-					/>
-				</div>
-				<div class="p-5">
-					<h3 class="mb-5 text-center text-xl font-semibold">{{service.title}}</h3>
-					<p class="text-sm leading-relaxed text-muted">
-						{{service.description}}
-					</p>
-				</div>
+		<div
+			class="group flex w-[280px] transform flex-col items-center overflow-hidden rounded-xl bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-gray-100">
+			<div class="h-[180px] w-full">
+				<img [src]="service.imageUrl" [alt]="'Photo du service ' + service.title"
+					class="h-full w-full object-cover" />
 			</div>
+			<div class="flex-grow p-5 group-hover:bg-red-200">
+				<h3 class="mb-5 text-center text-xl font-semibold">{{service.title}}</h3>
+				<p class="text-sm leading-relaxed text-muted text-center">
+					{{service.description}}
+				</p>
+			</div>
+		</div>
 		}
 	</div>
 </section>

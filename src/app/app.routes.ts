@@ -5,6 +5,7 @@ import { CoursComponent } from "./cours/cours.component";
 import { LandingComponent } from "./landing/landing.component";
 import { ReparationComponent } from "./reparation/reparation.component";
 import { LocationComponent } from "./location/location.component";
+import { TemoignagesComponent } from "./temoignages/temoignages.component";
 
 export const routes: Routes = [
 	{ path: "", component: LandingComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
 			{ path: "achat", component: AchatComponent },
 			{ path: "reparation", component: ReparationComponent },
 			{ path: "cours", component: CoursComponent },
+			{ path: "temoignages", component: TemoignagesComponent },
 		],
 	},
 ];

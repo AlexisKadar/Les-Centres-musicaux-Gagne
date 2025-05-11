@@ -1,0 +1,32 @@
+<div class="bg-white shadow-md rounded-2xl p-4 w-full max-w-md mx-auto mb-18">
+    <!-- Titre -->
+    <p class="text-base font-bold text-gray-900 mb-2 flex items-center">
+        Un commentaire à nous partager?
+        <span class="ml-2 text-lg">❤️</span>
+    </p>
+
+    <!-- Ligne input + upload -->
+    <div class="flex items-center space-x-2 mb-2">
+        <!-- Champ texte -->
+        <input type="text" placeholder="C’est vraiment super comme endroit!"
+            class="flex-grow border border-gray-800 rounded-md px-3 py-1.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-700 transition" />
+
+        <!-- Upload -->
+        <button class="p-2 border border-gray-800 rounded-md hover:bg-gray-100 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-900" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 12V4m0 0L8 8m4-4l4 4" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Bouton envoyer en dessous, rouge -->
+    <button
+        class="w-full flex justify-center items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-md transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z" />
+        </svg>
+        Envoyer
+    </button>
+</div>
