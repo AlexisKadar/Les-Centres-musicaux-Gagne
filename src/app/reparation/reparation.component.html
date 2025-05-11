@@ -6,7 +6,7 @@
 			<div class="intro section text-center">
 				<div class="text-left">
 					<h1 class="mb-4 text-[1.8rem] font-semibold">Redonnez vie à votre instrument</h1>
-					<p class="text-[1.3rem] text-muted">
+					<p class="text-muted text-[1.3rem]">
 						Un instrument endommagé n’est pas une fatalité. Notre atelier prend en charge tous types de réparations, qu’il
 						s’agisse d’un réglage mineur ou d’une restauration complète. Confiez-nous votre guitare, violon, cuivre ou piano —
 						nous redonnerons à votre instrument toute sa justesse et sa sonorité.
@@ -30,7 +30,7 @@
 
 	<div class="section mx-30 mb-18">
 		<h1 class="mb-4 text-[1.8rem] font-semibold">Un savoir-faire artisanal</h1>
-		<p class="text-left text-[1.3rem] text-muted">
+		<p class="text-muted text-left text-[1.3rem]">
 			Nos techniciens expérimentés travaillent avec soin et précision pour respecter l’authenticité de chaque instrument. Chaque
 			réparation est précédée d’un diagnostic personnalisé afin de garantir un résultat optimal. Nous utilisons uniquement des
 			pièces et matériaux de qualité, adaptés à chaque modèle.
@@ -38,7 +38,7 @@
 	</div>
 
 	<h2 class="mb-4 text-[1.8rem] font-semibold">Devis rapide & prise en charge simplifiée</h2>
-	<p class="mx-auto mb-8 text-sm text-[1.3rem] text-muted">
+	<p class="text-muted mx-auto mb-8 text-sm text-[1.3rem]">
 		Apportez votre instrument en magasin ou contactez-nous pour une évaluation rapide. Nous vous fournirons un devis clair, sans
 		engagement, et un délai de réparation précis. Parce que nous savons combien votre instrument compte pour vous, notre priorité
 		est de vous le rendre au plus vite, prêt à jouer.
@@ -46,38 +46,38 @@
 
 	<div class="mb-18 flex flex-wrap justify-center gap-6">
 		@for (service of services; track service.title) {
-		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
-			<img
-				[src]="service.imageUrl"
-				[alt]="service.title"
-				class="h-70 w-full object-cover brightness-100 filter transition duration-300 ease-in-out group-hover:brightness-93"
-			/>
-			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[1.6rem] font-medium">{{service.title}}</h3>
-				<div
-					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
-				>
-					{{service.price}}
+			<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
+				<img
+					[src]="service.imageUrl"
+					[alt]="service.title"
+					class="h-70 w-full object-cover brightness-100 filter transition duration-300 ease-in-out group-hover:brightness-93"
+				/>
+				<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
+					<h3 class="text-[1.6rem] font-medium">{{ service.title }}</h3>
+					<div
+						class="bg-primary/20 text-primary group-hover:bg-primary mt-2 inline-block rounded-full px-3 py-1 text-sm font-semibold transition duration-300 ease-in-out group-hover:text-white"
+					>
+						{{ service.price }}
+					</div>
 				</div>
 			</div>
-		</div>
 		}
 	</div>
 
-  <div class="section mb-18">
-    <div class="mt-8 rounded-lg p-6">
-      <h3 class="mb-4 text-[1.8rem] font-semibold">Comment louer ?</h3>
-      <p class="mb-6 text-[1.3rem] text-muted">
-        Réservez dans une de nos succursales. Pour plus d’informations sur les équipements ou toutes autres questions, n’hésitez
-        pas à nous contacter!
-      </p>
-      <div class="text-center">
-        <button
-          class="rounded bg-secondary px-4 py-4 font-semibold text-white transition duration-300 ease-in-out hover:bg-primary"
-        >
-          Voir les succursales et méthodes de contact
-        </button>
-      </div>
-    </div>
-  </div>
+	<div class="section mb-18">
+		<div class="mt-8 rounded-lg p-6">
+			<h3 class="mb-4 text-[1.8rem] font-semibold">Comment louer ?</h3>
+			<p class="text-muted mb-6 text-[1.3rem]">
+				Réservez dans une de nos succursales. Pour plus d’informations sur les équipements ou toutes autres questions, n’hésitez
+				pas à nous contacter!
+			</p>
+			<div class="text-center">
+				<button
+					class="bg-secondary hover:bg-primary rounded px-4 py-4 font-semibold text-white transition duration-300 ease-in-out"
+				>
+					Voir les succursales et méthodes de contact
+				</button>
+			</div>
+		</div>
+	</div>
 </section>
