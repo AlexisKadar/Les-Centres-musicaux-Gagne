@@ -6,7 +6,7 @@
 			<div class="intro section text-center">
 				<div class="text-left">
 					<h1 class="mb-4 text-[1.8rem] font-semibold">Trouvez l’instrument qui vous ressemble</h1>
-					<p class="text-[1.3rem] text-muted">
+					<p class="text-muted text-[1.3rem]">
 						Acheter un instrument est une étape importante pour tout musicien. Que vous soyez débutant ou confirmé, notre équipe
 						est là pour vous conseiller et vous guider dans votre choix. Nous proposons une large sélection d’instruments adaptés
 						à tous les niveaux et tous les styles.
@@ -30,7 +30,7 @@
 
 	<div class="section mx-30 mb-18">
 		<h1 class="mb-4 text-[1.8rem] font-semibold">Une qualité garantie, un service personnalisé</h1>
-		<p class="text-left text-[1.3rem] text-muted">
+		<p class="text-muted text-left text-[1.3rem]">
 			Tous nos instruments sont soigneusement sélectionnés pour leur qualité et leur durabilité. En magasin, vous pouvez essayer,
 			comparer et poser toutes vos questions à nos conseillers passionnés. Notre objectif : que vous repartiez avec l’instrument
 			qui vous correspond vraiment, en toute confiance.
@@ -38,7 +38,7 @@
 	</div>
 
 	<h2 class="mb-4 text-[1.8rem] font-semibold">Offres spéciales & facilités de paiement</h2>
-	<p class="mx-auto mb-8 text-sm text-[1.3rem] text-muted">
+	<p class="text-muted mx-auto mb-8 text-sm text-[1.3rem]">
 		Profitez régulièrement de promotions sur une sélection d’instruments neufs ou d’occasion. Nous proposons également des
 		solutions de financement flexibles pour vous permettre d’acquérir l’instrument de vos rêves en toute sérénité. Payez en
 		plusieurs fois sans frais et commencez à jouer dès aujourd’hui.
@@ -46,34 +46,30 @@
 
 	<div class="mb-18 flex flex-wrap justify-center gap-6">
 		@for (instrument of instruments; track instrument.title) {
-		<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
-			<img
-				[src]="instrument.imageUrl"
-				[alt]="instrument.title"
-				class="h-70 w-full object-contain p-4"
-			/>
-			<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
-				<h3 class="text-[2rem] font-medium">{{instrument.title}}</h3>
-				<div
-					class="mt-2 inline-block rounded-full bg-primary/20 px-3 py-1 text-sm font-semibold text-primary transition duration-300 ease-in-out group-hover:bg-primary group-hover:text-white"
-				>
-					{{instrument.price}}
+			<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
+				<img [src]="instrument.imageUrl" [alt]="instrument.title" class="h-70 w-full object-contain p-4" />
+				<div class="bg-card py-6 transition duration-300 ease-in-out group-hover:bg-red-200">
+					<h3 class="text-[2rem] font-medium">{{ instrument.title }}</h3>
+					<div
+						class="bg-primary/20 text-primary group-hover:bg-primary mt-2 inline-block rounded-full px-3 py-1 text-sm font-semibold transition duration-300 ease-in-out group-hover:text-white"
+					>
+						{{ instrument.price }}
+					</div>
 				</div>
 			</div>
-		</div>
 		}
 	</div>
 
 	<div class="section mb-18">
 		<div class="mt-8 rounded-lg p-6">
 			<h3 class="mb-4 text-[1.8rem] font-semibold">Comment acheter ?</h3>
-			<p class="mb-6 text-[1.3rem] text-muted">
+			<p class="text-muted mb-6 text-[1.3rem]">
 				Passez dans une de nos succursales. Pour plus d’informations sur les équipements ou toutes autres questions, n’hésitez pas
 				à nous contacter!
 			</p>
 			<div class="text-center">
 				<button
-					class="rounded bg-secondary px-4 py-4 font-semibold text-white transition duration-300 ease-in-out hover:bg-primary"
+					class="bg-secondary hover:bg-primary rounded px-4 py-4 font-semibold text-white transition duration-300 ease-in-out"
 				>
 					Voir les succursales et méthodes de contact
 				</button>

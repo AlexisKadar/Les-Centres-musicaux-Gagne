@@ -3,9 +3,10 @@ import { AchatComponent } from "./achat/achat.component";
 import { LayoutComponent } from "./components/global/layout/layout.component";
 import { CoursComponent } from "./cours/cours.component";
 import { LandingComponent } from "./landing/landing.component";
-import { ReparationComponent } from "./reparation/reparation.component";
 import { LocationComponent } from "./location/location.component";
 import { TemoignagesComponent } from "./temoignages/temoignages.component";
+import { ReparationComponent } from "./reparation/reparation.component";
+
 
 export const routes: Routes = [
 	{ path: "", component: LandingComponent },
