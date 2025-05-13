@@ -16,6 +16,7 @@ export class FooterComponent {
 				{ title: "Accueil", url: "/" },
 				{ title: "Services Offerts", url: "/location" },
 				{ title: "Témoignages", url: "/temoignages" },
+				{ title: "Succursales", url: "/succursales" }
 			],
 		},
 		{

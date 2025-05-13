@@ -6,6 +6,7 @@ import { LandingComponent } from "./landing/landing.component";
 import { LocationComponent } from "./location/location.component";
 import { TemoignagesComponent } from "./temoignages/temoignages.component";
 import { ReparationComponent } from "./reparation/reparation.component";
+import { SuccursalesComponent } from "./succursales/succursales.component";
 
 
 export const routes: Routes = [
@@ -18,6 +19,7 @@ export const routes: Routes = [
 			{ path: "achat", component: AchatComponent },
 			{ path: "reparation", component: ReparationComponent },
 			{ path: "cours", component: CoursComponent },
+			{ path: "succursales", component: SuccursalesComponent },
 			{ path: "temoignages", component: TemoignagesComponent },
 		],
 	},

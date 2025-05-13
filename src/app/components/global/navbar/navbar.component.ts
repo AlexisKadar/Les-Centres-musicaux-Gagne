@@ -37,5 +37,9 @@ export class NavbarComponent {
 			href: "/temoignages",
 			label: "Témoignages",
 		},
+		{
+			href: "/succursales",
+			label: "Succursales",
+		}
 	];
 }
