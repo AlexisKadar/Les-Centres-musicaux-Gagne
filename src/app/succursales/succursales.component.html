@@ -1,11 +1,25 @@
-<script src="https://maps.googleapis.com/maps/api/js?key="></script>
-<section>
+<section class="flex flex-col  mb-18 items-center">
+	<h1 class="mb-18 text-[2rem] font-bold">Nos Succursales</h1>
+
     <div>
-        
+        <google-map
+        [center]="center"
+        [zoom]="zoom"
+        width="700"
+        height="400">
+            <map-marker
+                *ngFor="let marker of markerPositions"
+                [position]="marker">
+            </map-marker>
+        </google-map>
+    </div>
+
+    <div>
+        <button class="border-1 border-solid" type="button">Carte</button>
+        <button class="border-1 border-solid" type="button">Photo</button>
     </div>
 </section>
 <section class="px-5 py-6 text-center">
-	<h2 class="mb-18 text-[2rem] font-bold">Nos Succursales</h2>
 
 
     
