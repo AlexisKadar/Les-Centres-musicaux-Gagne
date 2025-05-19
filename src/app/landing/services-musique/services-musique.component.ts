@@ -39,7 +39,7 @@ export class ServicesMusiqueComponent {
 			title: "Location d'Instrument",
 			description:
 				"Découvrez notre service de location d'instruments de qualité pour tous vos besoins. Une solution économique idéale pour débuter la musique ou pour des projets temporaires, avec des options de location flexibles et adaptées à votre budget.",
-				Link: "location",
+			link: "location",
 		},
 	];
 }
