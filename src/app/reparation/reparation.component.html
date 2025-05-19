@@ -46,7 +46,7 @@
 
 	<div class="mb-18 flex flex-wrap justify-center gap-6">
 		@for (service of services; track service.title) {
-			<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100">
+			<div class="group w-75 overflow-hidden rounded-xl bg-white shadow-md transition duration-300 ease-in-out hover:bg-gray-100 hover:-translate-y-1 hover:shadow-lg">
 				<img
 					[src]="service.imageUrl"
 					[alt]="service.title"
