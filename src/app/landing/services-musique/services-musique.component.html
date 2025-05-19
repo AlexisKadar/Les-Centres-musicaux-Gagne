@@ -8,6 +8,7 @@
 
 	<div class="mx-auto inline-grid grid-cols-[280px_280px] gap-18">
 		@for (service of services; track service.title) {
+			<a [href]="service.link">
 		<div
 			class="group flex w-[280px] transform flex-col items-center overflow-hidden rounded-xl bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-gray-100">
 			<div class="h-[180px] w-full">
@@ -21,6 +22,7 @@
 				</p>
 			</div>
 		</div>
+		</a>
 		}
 	</div>
 </section>
