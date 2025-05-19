@@ -14,7 +14,7 @@
 					<ul class="flex flex-col gap-1.5">
 						@for (link of category.links; track $index) {
 							<li>
-								<a class="hover:underline" [href]="{ link }">
+								<a class="hover:underline" href="{{ link.url }}">
 									{{ link.title }}
 								</a>
 							</li>

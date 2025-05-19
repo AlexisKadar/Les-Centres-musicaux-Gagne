@@ -14,7 +14,6 @@ export class FooterComponent {
 			title: "Site Web",
 			links: [
 				{ title: "Accueil", url: "/" },
-				{ title: "Services Offerts", url: "/location" },
 				{ title: "Témoignages", url: "/temoignages" },
 				{ title: "Succursales", url: "/succursales" }
 			],
@@ -22,17 +21,18 @@ export class FooterComponent {
 		{
 			title: "Services",
 			links: [
-				{ title: "Service A", url: "/" },
-				{ title: "Service B", url: "/" },
-				{ title: "Service C", url: "/" },
+				{ title: "Location D'instruments", url: "/location" },
+				{ title: "Achat D'instruments", url: "/achat" },
+				{ title: "Cours de Musique", url: "/cours" },
+				{ title: "Réparation D'instruments", url: "/reparation" },
 			],
 		},
 		{
 			title: "Mentions légales",
 			links: [
-				{ title: "Conditions d'utilisation", url: "/terms" },
-				{ title: "Politique de confidentialité", url: "/privacy" },
-				{ title: "Politique de cookies", url: "/cookies" },
+				{ title: "Conditions d'utilisation", url: "" },
+				{ title: "Politique de confidentialité", url: "" },
+				{ title: "Politique de cookies", url: "" },
 			],
 		},
 	];
