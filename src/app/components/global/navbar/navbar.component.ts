@@ -18,6 +18,16 @@ export class NavbarComponent {
 			label: "Accueil",
 		},
 		{
+			href: "/temoignages",
+			label: "Témoignages",
+		},
+		{
+			href: "/succursales",
+			label: "Succursales",
+		}
+	];
+	services = [
+		{
 			href: "/location",
 			label: "Location D'instruments",
 		},
@@ -32,14 +42,7 @@ export class NavbarComponent {
 		{
 			href: "/reparation",
 			label: "Réparation D'instruments",
-		},
-		{
-			href: "/temoignages",
-			label: "Témoignages",
-		},
-		{
-			href: "/succursales",
-			label: "Succursales",
 		}
 	];
+
 }

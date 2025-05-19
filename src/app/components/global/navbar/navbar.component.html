@@ -3,7 +3,7 @@
 		<a routerLink="/">
 			<img alt="Logo" class="h-16 min-w-[136px]" height="64" ngSrc="{{ isDark ? '/logo-light.png' : '/logo.png' }}" width="136" />
 		</a>
-
+		
 		<ul class="flex items-center gap-7">
 			<li *ngFor="let link of links">
 				<a class="hover:underline font-medium {{ isDark ? 'text-white' : 'text-primary' }}" [routerLink]="link.href">
@@ -11,5 +11,32 @@
 				</a>
 			</li>
 		</ul>
+		<div class="relative group {{ isDark ? 'text-white' : 'text-primary' }}">
+			<div class="flex flex-row items-center gap-x-2">
+
+				Services
+				<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 0L6 6L12 0H0Z" fill="white" *ngIf="isDark"/>
+					<path d="M0 0L6 6L12 0H0Z" fill="#D62A23" *ngIf="!isDark"/>
+				</svg>
+			</div>
+			<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+				<div class="px-2 pt-2 pb-4 bg-red-200 shadow-lg rounded-xl">
+					<div class="dropdown-menu">
+						<ul class="">
+							<li *ngFor="let link of services">
+								<a class="hover:underline font-medium {{ isDark ? 'text-white' : 'text-primary' }}" [routerLink]="link.href">
+									{{ link.label }}
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 	</nav>
+
+
+
 </header>
