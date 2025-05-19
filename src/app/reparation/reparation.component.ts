@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
 	selector: "app-reparation",
@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 	templateUrl: "./reparation.component.html",
 	styleUrl: "./reparation.component.css",
 })
-export class ReparationComponent {
+export class ReparationComponent implements OnInit {
 	services = [
 		{
 			imageUrl:
@@ -28,4 +28,13 @@ export class ReparationComponent {
 			price: "40$",
 		},
 	];
+
+	ngOnInit(): void {
+		const fadeInContainer = document.getElementById('fade-in-container');
+		if (fadeInContainer) {
+		  setTimeout(() => {
+			fadeInContainer.classList.add('opacity-100');
+		  }, 100);
+		}
+	  }
 }

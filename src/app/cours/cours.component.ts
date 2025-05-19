@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+
 
 @Component({
 	selector: "app-cours",
@@ -8,7 +9,7 @@ import { Component } from "@angular/core";
 	templateUrl: "./cours.component.html",
 	styleUrl: "./cours.component.css",
 })
-export class CoursComponent {
+export class CoursComponent implements OnInit {
 	courses = [
 		{
 			imageUrl:
@@ -27,4 +28,14 @@ export class CoursComponent {
 			price: "40$",
 		},
 	];
+
+	ngOnInit(): void {
+		const fadeInContainer = document.getElementById('fade-in-container');
+		if (fadeInContainer) {
+		  setTimeout(() => {
+			fadeInContainer.classList.add('opacity-100');
+		  }, 100);
+		}
+	  }
 }
+

@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
 	selector: "app-location",
@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 	templateUrl: "./location.component.html",
 	styleUrl: "./location.component.css",
 })
-export class LocationComponent {
+export class LocationComponent implements OnInit {
 	instruments = [
 		{
 			imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GuitareClassique5.png/330px-GuitareClassique5.png",
@@ -27,4 +27,13 @@ export class LocationComponent {
 			price: "40$",
 		},
 	];
+
+	ngOnInit(): void {
+		const fadeInContainer = document.getElementById('fade-in-container');
+		if (fadeInContainer) {
+		  setTimeout(() => {
+			fadeInContainer.classList.add('opacity-100');
+		  }, 100);
+		}
+	  }
 }
